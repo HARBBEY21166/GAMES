@@ -1,15 +1,11 @@
 /*BACKGROUND*/
 body{
-    background-image: url("back.png");
+    background-image: url("../img/back.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 /*BACKGROUND*/
-
-#search{
-    float: right;
-}
 
 /*HEADER*/
 #Anchor a{
@@ -161,7 +157,7 @@ p{
 #frequent{
     background-color: #fff;
     margin-top: 100px;
-    width: 1250px;
+    width: 1350px;
     padding-bottom: 50px;
     margin: auto;
     margin-bottom: 100px;
@@ -305,3 +301,6 @@ div #marker{
      margin-left: 5px;
  }
  
+ #search{
+    float: right;
+ }
