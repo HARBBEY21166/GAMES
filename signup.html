@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
 
   <head>
      <title>GAMES</title>
@@ -18,7 +18,7 @@
          <p class="personal">Please fill in the options below correctly:</p>
          <section id="border">
              <div class="form">
-                 <form action="home.html">
+                 <form action="index.html" method="POST" data-netlify="true"></form>>
                        <h2>Sign up</h2>
                      <p>Already have an account?<a href="login.html" class="logsignin"> Log in</a></p>
                      <label for="title">TITLE*:</label><br>
@@ -29,23 +29,23 @@
                          <option value="Miss">Miss</option>
                      </select><br><br>
       
-                     <label for="top">First Name:</label><br>
-                     <input type="text" id="top"  placeholder="First Name" required><br><br>
+                     <label for="name">First Name:</label><br>
+                     <input type="text" id="name"  placeholder="First name..." name="name" required><br><br>
     
-                     <label for="below">Last Name:</label><br>
-                     <input type="text" id="below" placeholder="Last Name" required><br><br>
+                     <label for="name">Last Name:</label><br>
+                     <input type="text" id="name" placeholder="Last name..." name="name" required><br><br>
      
-                     <label for="wtf">Mobile number:</label><br>
-                     <input type="number" type="tel" id="wtf" placeholder="Mobile" required><br><br>
+                     <label for="mobile number">Mobile number:</label><br>
+                     <input type="number" type="tel" id="mobile number" placeholder="Mobile" name="mobile number" required><br><br>
           
-                      <label for="sky">Email:</label><br>
-                      <input type="email" id="sky" placeholder="Email" required><br><br>
+                      <label for="email">Email:</label><br>
+                      <input type="email" id="sky" placeholder="Enter email..." name="email" required><br><br>
     
-                     <label for="up">Password:</label><br>
-                     <input type="Password" id="up" placeholder="Enter password" required><br><br>
+                     <label for="password">Password:</label><br>
+                     <input type="Password" id="password" placeholder="Enter password..." name="password" required><br><br>
    
-                     <label for="up">Confirm password:</label><br>
-                     <input type="Password" id="up" placeholder="Enter password" required><br><br>
+                     <label for="password">Confirm password:</label><br>
+                     <input type="Password" id="password" placeholder="Enter password..." name="password" required><br><br>
 
                      <p><input type="checkbox" checked> Email me with news and updates</p>
    
@@ -59,6 +59,9 @@
    
                      <input type="radio" id="other" value="other" name="gender">  
                      <label for="female">Others</label><br><br>
+                     <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                     </div>
                      <input type="submit" class="button_1" value="Sign up for free">
                       <p>By clicking the "Sign up for free" button, you are creating an account, and agree to HARBBEY GAMES' <a href="#"><b>Terms of Service</b></a> and <a href="#"><b>Privacy Policy</b></a></p>
                   </form>      
