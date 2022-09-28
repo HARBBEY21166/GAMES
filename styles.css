@@ -1,11 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+html{
+    height: -webkit=fill-available;
+}
+
 /*BACKGROUND*/
 body{
-    background-image: url("back.png");
+    background-image: url("back.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    height: -webkit=fill-available;
 }
 /*BACKGROUND*/
+
+main{
+    flex: 1;
+    overflow: scroll;
+}
+
+.container{
+    padding: 16px;
+}
+
+#form{
+    background-color: aqua;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+#form input{
+    all: unset;
+    font: 15px;
+    color: rgb(18, 16, 16);
+    padding: 16px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+#form input button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+svg {
+    color: rgb(21, 20, 21);
+    fill: currentColor;
+    /*width: 24px;
+    height: 24px;
+    padding: 10px;*/
+    height: 24px;
+    width: 24px;
+}
 
 /*HEADER*/
 #Anchor a{
@@ -14,8 +81,23 @@ body{
     text-transform: uppercase;
 }
 
+#header{
+    border-bottom: 4px black solid;
+     position: fixed;
+     background-color: #fff;
+     width: 59.4%;
+     margin-top: 10px;
+     margin-left: 220px;
+     margin-right: auto;
+     margin-bottom: 700px;
+     padding: 50px;
+     transition: 0.3s;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
 /*header{
-    border-bottom: 4px solid black;
+    
     margin-bottom: 50px;
     background-color: #fff;
     padding-top: 30px;
@@ -134,12 +216,6 @@ ul{
     padding: 0;
 }
 
-footer{
-    border-top: 4px solid black;
-    background-color: #fff;
-    text-align: center;
-    padding: 20px;
-}
 
 p{
     color: rgb(37, 35, 37);
@@ -147,21 +223,24 @@ p{
 
 .list{
    background-color: #fff;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 1000px;
-    margin: auto;
+    margin-top: 390px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
     padding: 50px;
+    transition: 0.3s;
 }
 
-#frequent{
+/*#frequent{
     background-color: #fff;
-    margin-top: 100px;
+    margin-top: 390px;
     width: 1000px;
     padding-bottom: 50px;
     margin: auto;
     margin-bottom: 100px;
-}
+}*/
 
 .asphalt{
     padding: 50px;
@@ -194,9 +273,8 @@ textarea{
 }
 
 div #door{
-   /* background-color: blue;*/
-    width: 500px;
-    height: 650px;
+    width: 450px;
+    height: 800px;
     border: solid black 50px;
     padding: 20px;
     margin: 0;
@@ -205,8 +283,8 @@ div #door{
 }
 
 .a{
-    background-color: blue;
-    width: 500px;
+    background: linear-gradient(red, blue);
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0; 
     border-radius: 50px 5px 50px 5px;
@@ -215,7 +293,7 @@ div #door{
 
 .b{
     background-color: rgb(135, 191, 31);
-    width: 500px;
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0;
     border-radius: 50px 5px 50px 5px;
@@ -224,7 +302,7 @@ div #door{
 
 .c{
     background-color: rgb(191, 21, 21);
-    width: 500px;
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0; 
     border-radius: 50px 5px 50px 5px;
@@ -232,9 +310,8 @@ div #door{
 }
 
 #door1{
-    /* background-color: blue;*/
-     width: 500px;
-     height: 650px;
+     width: 450px;
+     height: 800px;
      border: solid black 50px;
      padding: 20px;
      margin: 0;
@@ -243,28 +320,28 @@ div #door{
 
 
 .d{
-    background-image: url(../img/asphalt.png);
+    background-image: url(asphalt.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0; 
 }
 
 .e{
-    background-image: url(../img/callofduty.png);
+    background-image: url(callofduty.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0; 
 }
 
 .f{
-    background-image: url(../img/shadowfight3.png);
+    background-image: url(shadowfight3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 300px;
     height: 200px;
     margin: 15px 0 15px 0; 
 }
@@ -304,3 +381,18 @@ div #marker{
  #search{
     float: right;
  }
+
+ .footer{
+    border-top: 4px solid black;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.field{
+    margin: 0 auto 5px auto;
+}
